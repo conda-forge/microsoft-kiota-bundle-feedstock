@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.10.1"
+  version: "1.10.3"
 
 package:
   name: microsoft-kiota-bundle
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/microsoft-kiota-bundle/microsoft_kiota_bundle-${{ version }}.tar.gz
-  sha256: 76975eed76fb01fcdd760a9968552e629292fc0b7a2c25b7ffd6c697ebdd0c99
+  sha256: db9a8f09bafa32f8c797e433c8bf541a8f1c4a3b07fcf162a41c625ee1c181e2
 
 build:
   number: 0
@@ -37,8 +37,8 @@ tests:
         - kiota_bundle
       pip_check: true
       python_version:
-      - ${{ python_min }}.*
-      - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Bundle package for kiota generated libraries in Python
